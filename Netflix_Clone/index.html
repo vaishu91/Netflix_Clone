@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Netflix</title>
+    <link rel="stylesheet" href="home_page.css"/>
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_left">
+            <a href="index.html">
+                <img src="./images/logo_white.png" alt="" class="nav_logo">
+            </a>
+        </div>
+        <div class="nav_right">
+            <img src="./images/avatar1.jpeg.jpg" alt="" class="nav_avtar">
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <header id="banner">
+        <div id="banner_cont">
+            <h1 id="banner_Title"></h1>
+            <div id="banner_buttons">
+                <button id="banner_button">Play</button>
+                <button id="banner_button">My List</button>
+            </div>
+        </div>
+        <div>
+            <p id="banner_desc"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>
+    </header>
+
+    <!-- Row -->
+    <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll",function(){
+            var nav = document.querySelector(".nav");
+            nav.classList.toggle("active",window.scrolly>0);
+        })
+    </script>
+</body>
+</html>
